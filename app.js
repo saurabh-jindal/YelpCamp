@@ -27,7 +27,10 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
+app.use(function(){
+    res.locals.currentUser = req.user;
+    next();
+});
 
 
 
@@ -92,7 +95,7 @@ app.get("/campgrounds/:id" ,(req,res) => {
 }); 
 
 // comments routes..
-app.get("/campgrounds/:id/comments/new",(req,res) => {
+app.get("/campgrounds/:id/comments/new",isLogegdIn,(req,res) => {
     Campground.findById(req.params.id, function(err, campground){
         if(err){
             console.log(err);
@@ -101,7 +104,7 @@ app.get("/campgrounds/:id/comments/new",(req,res) => {
         }
     });
 });
-app.post("/campgrounds/:id/comments",(req,res) => {
+app.post("/campgrounds/:id/comments",isLogegdIn,(req,res) => {
     Campground.findById(req.params.id, function(err, campground){
          if(err){
              console.log(err);
@@ -157,7 +160,12 @@ app.get("/logout",(req, res) => {
     res.redirect("/campgrounds");
 });
 
-
+function isLogegdIn(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/login");
+}
 
 app.listen("3000", () => {
     console.log("started the server at,3000");

@@ -1,8 +1,8 @@
 body {
     background: url("../imgs/photo-1445308394109-4ec2920981b1.jpg");
-    background-size : cover;
-    background-position : center;
-    transition : background 1.5s linear;
+    background-size: cover;
+    background-position: center;
+    transition: background 1.5s linear;
 }
 body,
 html {
@@ -26,4 +26,3 @@ hr {
     border-bottom: 1px solid rgb(0,0,0);
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-

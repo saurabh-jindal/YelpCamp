@@ -4,22 +4,22 @@ var Campground = require('./models/campground'),
 
 var campgroundData = [
   {
-    name: 'Salmons Creek',
+    name: 'Lotus Rivers',
     image: 'https://farm6.staticflickr.com/5479/11694969344_42dff96680.jpg',
     description: "Great place to go fishin' Bacon ipsum dolor amet kielbasa cow"
     },
   {
-    name: 'Granite Hills',
+    name: 'Landing Hills',
     image: 'https://farm5.staticflickr.com/4103/5088123249_5f24c3202c.jpg',
     description: "It's just a hill.  Made of granite.  Nothing more! Cow doner."
     },
   {
-    name: 'Wildwood Campground',
+    name: 'Forest Graze',
     image: 'https://farm5.staticflickr.com/4016/4369518024_0f64300987.jpg',
     description: 'All campsites.  All the time.Short ribs pastrami drumstick.'
     },
   {
-    name: 'Lake Fooey',
+    name: 'Lakey Flow',
     image: 'https://farm7.staticflickr.com/6138/6042439726_9efecf8348.jpg',
     description: 'Hills and lakes and lakes and hills.  Pork ribeye pork chop.'
     }
@@ -28,7 +28,7 @@ var campgroundData = [
 var commentData1 = [
   {
     text: 'This place is great',
-    author: 'Homer'
+    author: 'Saurabh Jindal'
     },
   {
     text: '. . .',

@@ -13,6 +13,7 @@ var express               = require("express"),
 var commentRoutes = require("./routes/comments"),
     campgroundsRoutes = require("./routes/campgrounds"),
     indexRoutes        = require("./routes/index");
+    
 seedDB();
 mongoose.connect("mongodb://localhost/yelpcampV1");
 app.use(bodyParser.urlencoded({extended:true}));
@@ -36,8 +37,10 @@ app.use(function(){
 });
 
 app.use(indexRoutes);
-app.use(commentRoutes);
 app.use(campgroundsRoutes);
+app.use(commentRoutes);
+
+
 
 app.listen("3000", () => {
     console.log("started the server at,3000");

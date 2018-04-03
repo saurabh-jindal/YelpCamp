@@ -1,7 +1,7 @@
-# ProCamp
-## A ProCamp website using NodeJS.
+# CampSite
+## A CampSite website using NodeJS.
 
-##### ProCamp is created using:
+##### CampSite is created using:
 NodeJs 
 
 Express

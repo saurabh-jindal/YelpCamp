@@ -1,13 +1,13 @@
 {
   "name": "v1",
   "version": "1.1.0",
-  "description": "YelpCamp",
+  "description": "CampSite",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "Lily Romano",
+  "author": "Saurabh Jindal",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",

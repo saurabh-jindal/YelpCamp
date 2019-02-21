@@ -43,8 +43,6 @@ Session-cokkies
 
 * Manage user account with basic functionalities:
 
-  * ~~Password reset via email confirmation~~ (disabled)
-
   * Profile page setup with sign-up
 
 * Flash messages responding to users' interaction with the app
@@ -56,19 +54,12 @@ Session-cokkies
 * Update campground photos when editing campgrounds
 
 * Update personal information on profile page
-
-* Improve image load time on the landing page using Cloudinary
-
-* Use Helmet to strengthen security
  
 ## Getting Started
-
-> This app contains API secrets and passwords that have been hidden deliberately, so the app cannot be run with its features on your local machine. However, feel free to clone this repository if necessary.
-
 ### Clone or download this repository
 
 ```sh
-git clone https://github.com/lucasweng/yelp-camp.git
+git clone https://github.com/saurabh-jindal/YelpCamp.git
 ```
 
 ### Install dependencies
@@ -92,7 +83,6 @@ Some comments in the source code are course notes and therefore might not seem n
 ### Front-end
 
 * [ejs](http://ejs.co/)
-* [Google Maps APIs](https://developers.google.com/maps/)
 * [Bootstrap](https://getbootstrap.com/docs/3.3/)
 
 ### Back-end
@@ -100,17 +90,11 @@ Some comments in the source code are course notes and therefore might not seem n
 * [express](https://expressjs.com/)
 * [mongoDB](https://www.mongodb.com/)
 * [mongoose](http://mongoosejs.com/)
-* [async](http://caolan.github.io/async/)
-* [crypto](https://nodejs.org/api/crypto.html#crypto_crypto)
-* [helmet](https://helmetjs.github.io/)
 * [passport](http://www.passportjs.org/)
 * [passport-local](https://github.com/jaredhanson/passport-local#passport-local)
 * [express-session](https://github.com/expressjs/session#express-session)
 * [method-override](https://github.com/expressjs/method-override#method-override)
 * [nodemailer](https://nodemailer.com/about/)
-* [moment](https://momentjs.com/)
-* [cloudinary](https://cloudinary.com/)
-* [geocoder](https://github.com/wyattdanger/geocoder#geocoder)
 * [connect-flash](https://github.com/jaredhanson/connect-flash#connect-flash)
 
 

@@ -30,7 +30,7 @@ app.use(flash());
 app.set('view engine', 'ejs');
 
 // Backup variables in the event of environment variable issues.  See README
-var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp';
+var databaseURL = process.env.DATABASEURL || 'mongodb://localhost:9999/yelp_camp';
 var sessionSecret = process.env.SESSION_SECRET || 'This is a backup secret';
 
 mongoose.connect(databaseURL);
@@ -79,7 +79,7 @@ app.use('/campgrounds/:campground_id/comments', commentRoutes);
 // Listener! //
 // ===========//
 
-app.listen("3000", function() {
+app.listen(6789, function() {
   var appConsoleMsg = 'YelpCamp server has started: ';
   console.log(appConsoleMsg);
 });

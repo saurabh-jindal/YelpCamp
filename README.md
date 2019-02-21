@@ -104,8 +104,8 @@ Some comments in the source code are course notes and therefore might not seem n
 * mongo --port 9999
 * npm start
 
-![Alt text] (one.png)
-![Alt text] (two.png)
-![Alt text] (three.png)
+![Alt text](one.png)
+![Alt text](two.png)
+![Alt text](three.png)
 
 
